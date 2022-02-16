@@ -15,11 +15,13 @@ class Stack {
     }
 
     pop(){
+        this.store.splice(this.top, 1)
         return this.store[--this.top]
     }
 
     clear(){
         this.top = 0
+        this.store = []
     }
 
     length(){
